@@ -1,0 +1,6 @@
+node_modules
+# 忽略【所有】名为 dist 的文件/目录
+dist
+# 忽略【根目录】下以 dist 开头的文件/目录
+/dist*
+

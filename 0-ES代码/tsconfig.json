@@ -1,0 +1,65 @@
+{
+  // 简写配置
+  // {
+  //   "compilerOptions": {
+  //     "rootDir": "./src",
+  //     "outDir": "./dist",
+
+  //     "target": "es6",
+  //     "module": "commonjs",
+  //     "strict": true,
+  //     "declaration": true
+  //   },
+  //   "include": ["src/**/*"],
+  //   "exclude": ["node_modules", "dist"]
+  // }
+
+
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+
+    // 重要【默认值是 false（关闭状态）：TypeScript 默认会进行模块语法转换（例如将 import type转换为 import()语法），以兼容不同模块系统。】
+    // "verbatimModuleSyntax": true,
+
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
